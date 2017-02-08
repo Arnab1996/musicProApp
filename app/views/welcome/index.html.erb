@@ -1,0 +1,80 @@
+
+ <script type="text/javascript">
+          $(document).ready(function(){
+      $('.parallax').parallax();
+      });
+  </script>
+
+<div class="parallax-container">
+    <div class="parallax">
+      <%= image_tag "GuitarBackground.jpg" %>
+    </div>
+</div>
+
+  <div class="section amber accent-3">
+    <div class="row container">
+
+      
+      <p>
+This system is an artificial music composer capable of composing new music based on previously trained music. Based on recurrent neural networks, this Machine Learning based composer is trained on Indian as well as Western Folk Music. 
+
+      </p><p>
+    
+We present to you a collection of Computer Generated Music and a system capable enough to match the improvised works like those of free jazz performers, African percussionists, Ewe drummers and other World Class musicians.</p>
+    
+     </div> 
+<script type="text/javascript">
+          $(document).ready(function(){
+      $('.parallax').parallax();
+      });
+</script>
+
+
+<p>
+
+</p>
+
+</br>
+
+<center>
+  <audio src="<%= audio_path 'hexa1.mp3'%>" type="audio/mpeg" controls>
+    Your browser does not support the audio element.
+  </audio>
+</center>
+
+</br>
+
+
+
+
+  <script type="text/javascript">
+  document.addEventListener('play', function(e){
+      var audios = document.getElementsByTagName('audio');
+      for(var i = 0, len = audios.length; i < len;i++){
+          if(audios[i] != e.target){
+              audios[i].pause();
+          }
+      }
+  }, true);
+  </script>
+
+    </div>
+</div>
+  <div class="parallax-container">
+    <div class="parallax"><%= image_tag "Piano-Background.jpg" %></div>
+    </div>
+  
+    <div class="section amber accent-3">
+    <div class="row container">
+    <center></br> </br>
+    <audio src="<%= audio_path 'hexa2.mp3'%>" type="audio/mpeg" controls>
+          Your browser does not support the audio element.
+    </audio></center>
+  </div>
+</div>
+
+<div class="parallax-container">
+    <div class="parallax">
+      <%= image_tag "kak-nastroit-guitar.jpg" %>
+    </div>
+</div>
